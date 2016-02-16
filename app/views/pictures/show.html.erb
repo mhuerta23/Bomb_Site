@@ -22,8 +22,7 @@
   
 <!-- <center><button type="button">Like</button><%#= @picture.like_count %></center> -->
 
-
-
+<center>
 <%= form_for :picture,url: :pictures_like_count,method: :post, remote: true do |f| %>
   <div class="actions"> 
     <%= f.hidden_field :picture_id, value: @picture.id %>
@@ -32,12 +31,12 @@
 <% end %>
 
     <div id="count-element" >
-      <%= "Amount of likes #{@picture.like}" %>
+      <%= "Number of LIKES #{@picture.like}" %>
     </div>
-
+</center>
 
 
 </div>
-<center><%= link_to 'Edit', edit_picture_path(@picture) %> |
-<%= link_to 'Back', pictures_path %> |
+<center>
+  <%= link_to 'Edit', edit_picture_path(@picture) %>|<%= link_to 'Back', pictures_path %>
 </center>

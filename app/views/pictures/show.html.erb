@@ -21,22 +21,21 @@
   </p>
   
 <!-- <center><button type="button">Like</button><%#= @picture.like_count %></center> -->
+<div class="text-center" style="margin-bottom: 30px;">
+ <%= form_for :picture,url: :pictures_like_count,method: :post, remote: true do |f| %>
+   <div class="actions">
+     <%= f.hidden_field :picture_id, value: @picture.id %>
+     <%= f.submit 'Like', class: "btn btn-primary" %>
+   </div>
+ <% end %>
 
-<center>
-<%= form_for :picture,url: :pictures_like_count,method: :post, remote: true do |f| %>
-  <div class="actions"> 
-    <%= f.hidden_field :picture_id, value: @picture.id %>
-    <%= f.submit 'Like' %>
-  </div>
-<% end %>
-
-    <div id="count-element" >
-      <%= "Number of LIKES #{@picture.like}" %>
-    </div>
-</center>
+     <div id="count-element" >
+       <%= "Amount of likes #{@picture.like}" %>
+     </div>
+</div>
 
 
 </div>
-<center>
-  <%= link_to 'Edit', edit_picture_path(@picture) %>|<%= link_to 'Back', pictures_path %>
-</center>
+<div class="text-center"><%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path %>
+</div>

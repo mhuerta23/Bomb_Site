@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<div class="show-wrapper">
+  <p class="picture text-center">
+    <%= image_tag(@picture.url, width: "650", class: "img-zoom", data_zoom_image: @picture.url) %>
+  </p>
+
+  <h1 class="text-center">
+    <!-- <strong>Mural Name:</strong> -->
+    <%= @picture.name %>
+  </h1>
+
+  <p class="description text-center">
+    <strong>Description:</strong>
+    <%= @picture.description %>
+  </p>
+
+  <p class="tags text-center">
+    <strong>Tags:</strong>
+    <%= @picture.tag %>
+  </p>
+  
+<center><button type="button">Like</button><%= @picture.like %></center>
+
+<%#= link_to "Like", {:controller => "pictures", :action => "like", :id => @picture.id} %>
+<%= link_to 'Like', pictures_like_path(@picture.id) %> 
+
+<br>
+<%= @picture.inspect %>
+
+
+</div>
+<center><%= link_to 'Edit', edit_picture_path(@picture) %> |
+<%= link_to 'Back', pictures_path %> |
+</center>

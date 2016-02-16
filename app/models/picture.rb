@@ -1,11 +1,13 @@
 class Picture < ActiveRecord::Base
   validates :name, :url, :description, presence: true
-  after_initialize :default_values
 
-  private
-    def default_values
-      self.like ||= "1"
-    end
+
+  # def like_count
+  # 	p self.inspect
+  #   self.like += 1
+  #   self.save
+  # end  
+
 
 end
 

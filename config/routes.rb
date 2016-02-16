@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :pictures
-  get 'pictures/like' => 'pictures#like'#, as: :purchase
+  post 'pictures/like_count' => 'pictures#like_count'
 
   get 'pictures/about' => 'pictures#about'
 

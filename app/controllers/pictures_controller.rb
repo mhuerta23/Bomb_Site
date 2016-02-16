@@ -18,9 +18,20 @@ class PicturesController < ApplicationController
   def show
   end
 
-  def like
-    self.like += 1
-  end
+  def like_count
+    @picture = Picture.find(params["picture"]["picture_id"].to_i)
+  
+    @picture.like += 1
+    respond_to do |format|
+      if @picture.save
+        format.js
+      end
+    end 
+
+
+  end  
+
+
 
   # GET /pictures/new
   def new
@@ -79,6 +90,6 @@ class PicturesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def picture_params
-      params.require(:picture).permit(:name, :url, :description, :tag, :like)
+      params.require(:picture).permit(:name, :url, :description, :tag, :like, :picture_id)
     end
 end

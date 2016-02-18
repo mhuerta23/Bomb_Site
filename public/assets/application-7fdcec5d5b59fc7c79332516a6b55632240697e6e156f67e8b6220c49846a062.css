@@ -1,0 +1,239 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+ #custom-bootstrap-menu.navbar-default .navbar-brand {
+     color: rgba(119, 119, 119, 1);
+ }
+ #custom-bootstrap-menu.navbar-default {
+     font-size: 14px;
+     background-color: rgba(255, 255, 255, 1);
+     border-width: 0px;
+     border-radius: 0px;
+ }
+ #custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+     color: rgba(119, 119, 119, 1);
+     background-color: rgba(248, 248, 248, 0);
+ }
+ #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+ #custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+     color: rgba(51, 51, 51, 1);
+     background-color: rgba(248, 248, 248, 1);
+     background: -webkit-linear-gradient(top, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
+     background: linear-gradient(to bottom, rgba(248, 248, 248, 0) 0%, rgba(248, 248, 248, 1) 100%);
+ }
+ #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+ #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+ #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+     color: rgba(85, 85, 85, 1);
+     background-color: rgba(231, 231, 231, 1);
+ }
+ #custom-bootstrap-menu.navbar-default .navbar-toggle {
+     border-color: #ddd;
+ }
+ #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+ #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+     background-color: #ddd;
+ }
+ #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+     background-color: #888;
+ }
+ #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+ #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+     background-color: #ffffff;
+ }
+
+body {
+  position: relative;
+  padding:0;
+  margin:0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+.fp-row{
+  margin: 15px auto;
+}
+
+.search-form{
+  float: right;
+  padding-top: 15px;
+
+}
+
+.navbar-inverse{
+  /*background-image: url(http://i01.i.aliimg.com/wsphoto/v0/1971495331_1/Free-shipping-Blue-Illustration-Graffiti-Mural-Mural-wallpaper-for-walls-background.jpg);*/
+}
+.navbar{
+  margin: 0;
+}
+
+.white-text{
+  color:white;
+}
+li{
+  color:black;
+}
+
+
+#count-element{
+  
+}
+
+.footer {
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color:;
+  text-align: center;
+  color: black;
+}
+
+.footer ul{
+	list-style: none;
+}
+.footer ul li{
+	display: inline;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.description{
+  margin: 5px 15px;
+}
+
+.fp-image{
+  text-align: center;
+
+}
+
+.full-logo-nav{
+  /*background-image: url(http://i01.i.aliimg.com/wsphoto/v0/1971495331_1/Free-shipping-Blue-Illustration-Graffiti-Mural-Mural-wallpaper-for-walls-background.jpg);*/
+
+}
+
+.width-100{
+  width: 100%;
+}
+
+.desc{
+  height:90px;
+}
+
+.carousel{
+  max-height: 750px;
+  overflow: hidden;
+}
+
+.carousel item img{
+  width: 100%;
+  height: auto;
+
+}
+
+.navbar-inverse {
+     background-color: white;
+     border-color: white;
+     color:black;
+}
+
+.navbar-nav > li > a {
+  color:black;
+}
+
+.black-text{
+  color: black;
+}
+
+.form-wrapper{
+  margin: auto 100px;
+}
+
+.show-wrapper{
+  margin: auto 350px;
+}
+
+/*html, body, header { height:100%;}
+
+#page { position:relative;}
+#content { padding-bottom:130px;} /* FOOTER HEIGHT */
+footer { position:absolute; bottom:0;}*/

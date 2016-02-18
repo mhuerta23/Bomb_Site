@@ -13,24 +13,20 @@ class PicturesController < ApplicationController
     end
   end
 
-  # GET /pictures/1
-  # GET /pictures/1.json
+
   def show
   end
 
   def like_count
     @picture = Picture.find(params["picture"]["picture_id"].to_i)
-  
+
     @picture.like += 1
     respond_to do |format|
       if @picture.save
         format.js
       end
     end 
-
-
   end  
-
 
 
   # GET /pictures/new
@@ -72,6 +68,17 @@ class PicturesController < ApplicationController
     end
   end
 
+  def trending
+    @pictures = Picture.all
+
+    @trending_pictures = []
+    @pictures.each do |picture|
+      if picture.like >= 4
+        @trending_pictures << picture
+      end
+    end
+  end
+
   # DELETE /pictures/1
   # DELETE /pictures/1.json
   def destroy
@@ -92,4 +99,4 @@ class PicturesController < ApplicationController
     def picture_params
       params.require(:picture).permit(:name, :url, :description, :tag, :like, :picture_id)
     end
-end
+  end

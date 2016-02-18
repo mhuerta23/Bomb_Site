@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   resources :pictures
   post 'pictures/like_count' => 'pictures#like_count'
 
-  get 'pictures/about' => 'pictures#about'
+  #get 'pictures/about' => 'pictures#about'
+  get 'trending' => 'pictures#trending'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

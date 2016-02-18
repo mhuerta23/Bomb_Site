@@ -23,15 +23,14 @@
     <div class="lower-header">
   <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
     <div class="container-fluid">
-        <div class="navbar-header"><a class="navbar-brand" href="#">BOMB</a>
+        <div class="navbar-header"><%= link_to 'BOMB', root_path, class: "navbar-brand" %>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
             </button>
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav navbar-left">
               <li class="black-text"><%= link_to 'Home', root_path %></li>
-              <!-- <li><%= link_to 'Trending', '#' %></li>
-              <li><%= link_to 'Pickstick', '#' %></li> -->
+              <li><%= link_to 'Trending', trending_path %></li>
               <li><%= link_to 'BOMB IT', new_picture_path %></li>
                 </li>
             </ul>
@@ -50,16 +49,12 @@
 
   <%= yield %>
 
-
+<br>
 </div>
-<div class="footer">
-  <ul>
-    <li><%= link_to 'Home', root_path %></li>
-    <!-- <li><%= link_to 'Trending', '#' %></li>
-    <li><%= link_to 'Pickstick', '#' %></li> -->
-    <!-- <li><%= link_to 'Upload', new_picture_path %></li> -->
-  </ul>
-  <!-- <span>© 2016</span> -->
+<div class="footer text-center">
+    <hr>
+    <%= link_to 'Home', root_path %></li>
+
 </div>
 </body>
 
